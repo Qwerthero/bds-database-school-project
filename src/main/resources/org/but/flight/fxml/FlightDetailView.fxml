@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="571.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.but.flight.controllers.DetailController">
+   <children>
+      <Pane layoutX="528.0" layoutY="490.0" prefHeight="52.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="createButton" onAction="#handleCreate" layoutY="2.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="84.0" text="Create Flight" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="465.0" prefWidth="713.0">
+         <children>
+            <TableView fx:id="detailView" prefHeight="466.0" prefWidth="713.0">
+              <columns>
+                <TableColumn fx:id="flightIdColumn" prefWidth="59.0" text="flight_id" />
+                <TableColumn fx:id="departurePlaceColumn" prefWidth="102.0" text="departure_place" />
+                  <TableColumn fx:id="arrivalPlaceColumn" minWidth="0.0" prefWidth="87.0" text="arrival_place" />
+                  <TableColumn fx:id="departureTimeColumn" prefWidth="101.0" text="departure_time" />
+                  <TableColumn fx:id="arrivalTimeColumn" prefWidth="79.0" text="arrival_time" />
+                  <TableColumn fx:id="departureDateColumn" prefWidth="96.0" text="departure_date" />
+                  <TableColumn fx:id="arrivalDateColumn" prefWidth="77.0" text="arrival_date" />
+                  <TableColumn fx:id="countOfLayoverColumn" prefWidth="111.0" text="count_of_layover" />
+              </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem fx:id="editButton" mnemonicParsing="false" text="Edit Flight" />
+                        <MenuItem fx:id="deleteButton" mnemonicParsing="false" text="Delete flight" />
+                        <MenuItem fx:id="detailButton" mnemonicParsing="false" text="Detailed view" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="24.0" layoutY="487.0" prefHeight="52.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="refreshButton" layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="52.0" prefWidth="84.0" text="Refresh" />
+         </children>
+      </Pane>
+      <Pane layoutX="125.0" layoutY="487.0" prefHeight="52.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="allButton" layoutY="2.0" mnemonicParsing="false" onAction="#handleAll" prefHeight="52.0" prefWidth="84.0" text="Find All" />
+         </children></Pane>
+      <Pane layoutX="423.0" layoutY="489.0" prefHeight="52.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="findButton" layoutY="2.0" mnemonicParsing="false" onAction="#handleFind" prefHeight="52.0" prefWidth="84.0" text="Find" />
+         </children>
+      </Pane>
+      <Pane layoutX="231.0" layoutY="497.0" prefHeight="52.0" prefWidth="185.0">
+         <children>
+            <TextField fx:id="textField" layoutX="1.0" prefHeight="38.0" prefWidth="173.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

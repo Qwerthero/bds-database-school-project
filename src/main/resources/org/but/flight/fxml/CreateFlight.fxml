@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <TextField fx:id="dTimeField" layoutX="123.0" layoutY="58.0" />
+      <TextField fx:id="aTimeField" layoutX="123.0" layoutY="95.0" />
+       <DatePicker fx:id="dDatePicker" layoutX="123.0" layoutY="131.0" />
+       <DatePicker fx:id="aDatePicker" layoutX="123.0" layoutY="169.0" />
+       <TextField fx:id="dPlace" layoutX="123.0" layoutY="207.0" />
+       <TextField fx:id="aPlace" layoutX="123.0" layoutY="244.0" />
+       <TextField fx:id="lCount" layoutX="123.0" layoutY="283.0" />
+
+      <Label layoutX="14.0" layoutY="211.0" text="Departure place" />
+      <Label layoutX="14.0" layoutY="248.0" text="Destination place" />
+       <Label layoutX="14.0" layoutY="62.0" text="Departure time" />
+       <Label layoutX="14.0" layoutY="99.0" text="Arrival time" />
+       <Label layoutX="14.0" layoutY="135.0" text="Departure date" />
+       <Label layoutX="14.0" layoutY="173.0" text="Arrival date" />
+      <Label layoutX="14.0" layoutY="287.0" text="Count of layover" />
+      <Label layoutX="14.0" layoutY="327.0" text="Airplane" />
+
+      <Button fx:id="createButton" layoutX="401.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleCreate" prefHeight="47.0" prefWidth="81.0" text="Create" />
+      <MenuButton fx:id="aMenu" layoutX="123.0" layoutY="323.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+          <MenuItem fx:id="m1" mnemonicParsing="false" onAction="#m1" text="Action 1" />
+          <MenuItem fx:id="m2" mnemonicParsing="false" onAction="#m2" text="Action 2" />
+            <MenuItem fx:id="m3" mnemonicParsing="false" onAction="#m3" text="Action 2" />
+            <MenuItem fx:id="m4" mnemonicParsing="false" onAction="#m4" text="Action 2" />
+            <MenuItem fx:id="m5" mnemonicParsing="false" onAction="#m5" text="Action 2" />
+            <MenuItem fx:id="m6" mnemonicParsing="false" onAction="#m6" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Label fx:id="menuLabel" layoutX="244.0" layoutY="327.0" text="N/A" />
+   </children>
+</AnchorPane>

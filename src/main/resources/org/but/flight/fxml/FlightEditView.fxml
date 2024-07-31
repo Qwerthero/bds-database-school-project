@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="dTime" layoutX="110.0" layoutY="67.0" />
+      <TextField fx:id="aTime" layoutX="110.0" layoutY="104.0" />
+      <TextField fx:id="dDate" layoutX="110.0" layoutY="145.0" />
+      <TextField fx:id="aDate" layoutX="110.0" layoutY="188.0" />
+
+      <Button fx:id="editButton" layoutY="2.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="52.0" prefWidth="84.0" text="Confirm" />
+
+      <Label layoutX="14.0" layoutY="71.0" text="Departure Time" />
+      <Label layoutX="14.0" layoutY="108.0" text="Arrival Time" />
+      <Label layoutX="14.0" layoutY="149.0" text="Departure Date" />
+      <Label layoutX="14.0" layoutY="192.0" text="Arrival Date" />
+
+      <TextField fx:id="id" layoutX="110.0" layoutY="226.0" />
+      <Label layoutX="15.0" layoutY="230.0" text="ID" />
+   </children>
+</AnchorPane>

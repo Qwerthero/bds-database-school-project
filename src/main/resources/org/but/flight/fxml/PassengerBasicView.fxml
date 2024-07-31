@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.but.flight.controllers.BasicController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="322.0" prefWidth="502.0">
+         <children>
+            <ScrollPane prefHeight="322.0" prefWidth="502.0">
+               <content>
+                  <TableView fx:id="basicView" prefHeight="321.0" prefWidth="502.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="nameColumn" prefWidth="75.0" text="First name" />
+                      <TableColumn fx:id="surnameColumn" prefWidth="75.0" text="Surname" />
+                        <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="14.0" layoutY="336.0" prefHeight="52.0" prefWidth="93.0">
+         <children>
+            <Button fx:id="flightButton" layoutY="2.0" mnemonicParsing="false" onAction="#handleShowFlight" prefHeight="52.0" prefWidth="93.0" text="Flight" />
+         </children>
+      </Pane>
+      <Pane layoutX="119.0" layoutY="336.0" prefHeight="52.0" prefWidth="93.0">
+         <children>
+            <Button fx:id="injectionButton" layoutY="2.0" mnemonicParsing="false" onAction="#handleInjectionButton" prefHeight="52.0" prefWidth="93.0" text="SQL injection" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
